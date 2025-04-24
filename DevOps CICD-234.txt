@@ -151,4 +151,8 @@ Stages of DevOps
 2.Continous Integration: fetch the code from SCM-->Compile-->Code Quality Analysis-->Unit Testing-->Code Coverage-->generate a deployable
 3.Continous Delivery :Functional Testing,Performance testing and Acceptance Testing
 
+git commands:
+1. git init
+
+
 
