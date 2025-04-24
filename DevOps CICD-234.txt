@@ -1,0 +1,154 @@
+DevOps CICD
+
+Why Devops
+What is Devops
+Adoption of Devops in Projects
+Stages of Devops
+
+Waterfall model: Requirment Analysis->Designing->Coding->testing->Deployment
+
+Agile: Quick time to market, Response to changes are done quickly with quality, Develop software amidst requirement volatility
+
+                                 Agile                 Waterfall
+1. Deployment cycle times     Weeks/Days              Months/quarters
+2. Deployment                 feature/requirmentwise  All or none
+3. Response to change           Quick                   Slow
+
+Agile is a timeboxed, iterative approach to software delivery that builds software incrementally from the start of the project.
+
+Values of Agile:
+1. Individual and Interactions over processes and tools
+2. Working Software over comprehensive documentation
+3. Customer Collaboration over contract negotiation
+4. Responding to change over following a plan
+
+Principles of Agile:
+1. The highest priority for any team is to satisfy the customer through early and continous delivery of valuable software
+2. Deliver working software frequently from couple of weeks to a couple of months
+3. Business people and developers must work together daily throughout the project
+4. Working Software is the primary measure of progress
+
+The Flavors:
+1. Scrum: Used in Development projects
+2. Kanban: Used in maintenance projects
+3. Extreme Programming: CI,refactoring,TDD,BDD,pair programming: Used along with other flavors of Agile
+4. Lean: Used in manufacturing Environments
+
+Continous Integration: (dev1,dev2,dev3)--->SCM repo--->CI
+
+A software development practice that requires members of the team to integrate their work frequently.
+
+1. Code Analysis(Dynamic or static)
+2. Unit Testing 
+3. Code Coverage
+4. Build a deployable 
+
+Continous Delivery: is a software development process to automate and promote builds through higher environments.
+
+1. Environment provisioning for testing
+2. testing(QA)
+3. Deployment to pre-production
+4. Release Management
+5. Environment provisioning for testing
+6. Deployment and release to production
+
+
+DevOps:(Dev(dev+QA)+Ops(release mgmt,Infra mgmt, deployemnt mgmt,security,support))
+
+Automation and Collaboration
+
+Business((Dev & QA)<--------->Production(Ops))---->Release Management
+
+- involves a collaborative working of the development,testing,infrastructure,operations teams together with a unified process,metrics and goals.
+
+Maturity is measured by speed, frequency ,stability and quality of releases.
+
+(Planning-->Build-->Test-->Release-->Deployment-->Operations and Monitoring):->DevOps Workflow
+
+
+Aspects for Adoption of Devops in Projects:
+
+People Aspect(Alignment of teams)
+Model1: Dev and Ops Seperate teams
+- Interventions Planned at regular intervals
+- Teams keep seperate backlogs, but take each other's stories in their backlogs
+- Ops team gets knowledge about upcoming features,major design changes, possible impact on production
+- Dev team understands what causes outages/defects better, improves dev processes to reduce impact
+
+Model2: One Team with Ops extension
+- Horizontal Ops team performs as a backbone for all development teams
+- Few team members can become a part of dev team and perform tasks which are application specific
+- Ops representative will focus on all the Ops activities which are this team/application specific while all centralized Ops activities are taken by horizontal Ops team
+
+Model3: Pure DevOps
+- Team has single Backlog with Dev and Ops tasks
+- Each team member is capable of selecting any item and work on it
+
+Product Owner: Maintain Product backlog
+Release Manager: Overall responsibility of release Management
+Scrum Master: Ensure impediment free execution by Dev and Ops teams
+
+Process Aspect(Alignment of process) (Measurement and Optimization)
+Model1: Dev and Ops Seperate
+- Dev: Scrum ,Ops:ITIL
+- Governance Team for conflict resolution
+- few team cross-particpate in daily standups
+
+Model2: Dev and Ops seperate but following similar process
+- Dev: Scrum , Ops: Kanban
+- Two different product backlogs(PB), but single Product backlogs
+- Dev team works on user stories and Ops team works on high priority Kanban Product backlog
+- Daily standup by both teams
+
+Model3: Unified Process
+- Scrumban-Single DevOps team
+- Based on history,planned vs unplanned effort considered across
+- Team works on prioritized user stories
+- high prirority is set for unplanned high severity incidents, a team having expertise in that takes up and resolves
+
+Technology Aspect(Alignment of capabilities) (Tool stack & implementation)
+
+Dev: Version Control, Static/Dynamic Code Quality Analysis,Build Automation,Baseline in Artifactory,Continous Integration
+
+Test: Functional and Acceptance Testing
+
+Infra: Database Deployment,CD Automation,Release Management
+
+Ops: Incident Management Tools, Monitoring and Dashboard
+
+Big Room Planning: This Brings all the stakeholders who are responsible for delivery of software(business, dev, test,program management teams) together in as single room for about two days
+
+Feature toggle: When new features/enhancements need to be released to all/chosen user base into a live system without needing to change the code.
+
+Microservices: It is an architectural style to developing a single application as a suite of small services.
+
+Service Virtualization: helps in simulating application dependencies and begin testing earlier.
+
+Containerization: It allows VM's to share a single host OS and relevant binaries,drivers etc .
+
+Principles to be considered:
+1. Repeatability
+2. Reliability
+3. End To End Automation
+4. 100% source control 
+5. Auto build quality
+6. Done is released
+7. Continous Feedback
+8. Customer appetite for tooling 
+
+Tools:
+1. ALM: Jira
+2. Version control: Git
+3. Static Code Analysis: Sonarqube
+4. Unit Testing: Junit
+5. Code Coverage: Jacoco
+6. Build Automation: Maven
+7. Artifact repository: Jfrog Artifactory
+8. Continous Integration: Jenkins
+
+Stages of DevOps
+1.SCM(Source Code Management)
+2.Continous Integration: fetch the code from SCM-->Compile-->Code Quality Analysis-->Unit Testing-->Code Coverage-->generate a deployable
+3.Continous Delivery :Functional Testing,Performance testing and Acceptance Testing
+
+
